@@ -17,15 +17,16 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <img src="imgs/logo1.jpg" alt="logo image" class="logo__img">
+            <img src="imgs/logo1.jpg" alt="logo image" class="navbar__logo {
+                ">
         </div>
         <div class="navbar__menu">
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-                <li class="navbar__menu__item" data-link="#submission">Submission</li>
-                <li class="navbar__menu__item" data-link="#about">About us</li>
-                <li class="navbar__menu__item" data-link="#judges">Judges</li>
-                <li class="navbar__menu__item" data-link="#testimonials">Memory</li>
-                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            <li class="navbar__menu__item" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#submission">Submission</li>
+            <li class="navbar__menu__item" data-link="#about">About us</li>
+            <li class="navbar__menu__item" data-link="#judges">Judges</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Memory</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </div>
         <!-- Toggle Button -->
         <button class="navbar__toggle-btn">
@@ -35,12 +36,16 @@
     </nav>
 
     <!-- Home -->
-    <section class="home">
+    <section class="section" id="home">
         <div class="section__container">
             <div class="home__container">
-                <img src="imgs/ship.jpg" alt="home page image" class="home__img">
-                <h1 class="home__title">세월,<br/> 공감과 기억, <br/>온라인 공모전</h1>
+                <div class="home__left">
+                    <h1 class="home__title">세월<br/> 공감과 기억<br/>온라인 공모전</h1>
                 <button class="home__submit">SUBMIT</button>
+                </div>
+                <div class="home__right">
+                    <img src="imgs/ship.jpg" alt="home page image" class="home__img">
+                </div>
             </div>
         </div>
     </section>
@@ -48,8 +53,12 @@
     <!-- Submission -->
     <section class="section" id="submission">
         <div class="section__container">
-            <h1>Submission</h1>
-            <p>샌프란시스코 공감 은 세월호 참사 7주기를 맞이하여 희생자들을 추모하고, 참사가 우리에게 남긴 사회적 의미를 되새기며, 앞으로 우리 사회가 추구해야 할 가치/방향에 대한 고민의 기회로 삼고자 영상 공모전을 기획하였습니다.</p>
+            <div class="submission__title__container">
+                <!-- <h1 class="submission__title">Submission</h1> -->
+                <p>샌프란시스코 공감 은 세월호 참사 7주기를 맞이하여 희생자들을 추모하고, 참사가 우리에게 남긴 사회적 의미를 되새기며, 앞으로 우리 사회가 추구해야 할 가치/방향에 대한 고민의 기회로 삼고자 영상 공모전을 기획하였습니다.</p>
+            </div>
+            <div class="section__divider"></div>
+            <div class="submission__container">
             <div class="submission__left">
             <div class="submission__topic">
                 <h2>공모 주제</h2>
@@ -87,7 +96,7 @@
             </div>
             <div class="submission__category">
                 <h2>공모 분야 및 규격</h2>
-                <h3>아트/디자인분야: 순수그림, 카드뉴스, 홍보포스터, 티셔츠 디자인, 팸플릿, 웹툰, 캐릭터, 로고, 등</h3>
+                <h3 class="submission__subcategory_title">아트/디자인분야: 순수그림, 카드뉴스, 홍보포스터, 티셔츠 디자인, 팸플릿, 웹툰, 캐릭터, 로고, 등</h3>
                 <ul>
                     <li>작품규격</li>
                     <li>해상도 (Resolution): 300 dpi or higher</li>
@@ -95,7 +104,7 @@
                     <li>로고제작시 사이즈는 12inX12in 나 6 in X 6 in로 제출</li>
                     <li>손으로 그린 그림을 스캔해서 제출할 경우 반드시 컬러로 제출해야 하며 화질이 선명해야 함</li>
                 </ul>
-                <h3>영상분야: 애니메이션, 미니다큐, CF, 뮤직비디오, 단편영화, 영상메세지 등</h3>
+                <h3 class="submission__subcategory_title">영상분야: 애니메이션, 미니다큐, CF, 뮤직비디오, 단편영화, 영상메세지 등</h3>
                 <ul>
                     <li>해상도 (Resolution): HD (1920 X 1080)</li>
                     <li>영상길이 (length): 1 - 5 mins</li>
@@ -105,9 +114,9 @@
             
             </div>
             </div>
-            <div class="sumission__right">
+            <div class="submission__right">
                 <div class="submission__apply">
-                    <h1>공모 방법</h1>
+                    <h2>공모 방법</h2>
                     <ul>
                         <li>웹사이트 통해서 제출</li>
                         <li>공모전 참가 신청서, 출품작, 출품작 설명</li>
@@ -115,7 +124,7 @@
                     </ul>
                 </div>
                 <div class="submission__prize">
-                    <h1>시상 내역</h1>
+                    <h2>시상 내역</h2>
                     <ul>
                         <li>Grand Prize: 상금 $1000 / 총 1명</li>
                         <li>Gold: 상금 $500 / 총 3명</li>
@@ -123,7 +132,7 @@
                         <li>Bronze: 상금 $100.00 / 총 6명</li>
                     </ul>
                 <div class="submission__judge">
-                    <h1>심사 기준 및 평가 방법</h1>
+                    <h2>심사 기준 및 평가 방법</h2>
                     <ul>
                         <li>공모 주제 적합성</li>
                         <li>독창성, 참신성</li>
@@ -131,7 +140,7 @@
                     </ul>
                 </div>
                 <div class="submission__notice">
-                    <h1>유의 사항</h1>
+                    <h2>유의 사항</h2>
                         <ul>
                             <li>1명당 분야별 1점 제출 가능하며 중복 응모는 불가능함.</li>
                             <li>응모 작품은 반드시 제시된 규격에 맞아야 하며, 규격과 다르게 응모할 시에는 심사 대상에서 제외될 수 있음</li>
@@ -144,6 +153,8 @@
                 </div>
                 </div>
             </div>
+            </div>
+            <div class="section__divider"></div>
             <button class="sunmission__submit">SUBMIT</button>
         </div>
     </section>
@@ -151,68 +162,131 @@
     <!-- About us  -->
     <section class="section" id="about">
         <div class="section__container">
-            <h1>About Us</h1>
+            <h2 class="about__title">샌프란시스코 공감 (One Heart for Justice)</h2>
+            
+            <div class="about__container">
             <div class="about__left">
-                <div class="about__us">
-                    <h1>주최</h1>
+                <div class="about__title_container">
+                    <h2 class="about__left_title">주최</h2>
+                </div>
+                <div class="about__descrption">
                     <p>San Francisco “공감” (One Heart for Justice)은 2014년 세월호 참사를 통해 한국 사회에 만연해 있는 부정/부패, 불의를 목도한 후, 이를 방관해 온 사회적 책임을 통감하며 이 사건의 철저한 진상 규명과 책임자 처벌, 이같은 인재형 참사의 재발 방지를 통한 안전한 사회 건설을 위해 유가족과 함께 아파하고 문제 해결을 위해 작은 힘을 보태고자 뜻을 같이 했던 사람들의 모임으로 시작하였습니다. San Francisco "공감" (One Heart for Justice)은 사회 전반에 걸친 안전 시스템 확충, 사회적 약자들의 인권 등의 문제로 관심의 영역을 넓혀 나가면서, 사회 정의 실현과 보다 나은 미래를 만들어 가기 위해 함께 고민하고 공감하며 작은 실천을 통해 변화를 만들고자 2019년에는 주 캘리포니아에 정식 비영리단체로 501(c)(3) 등록하고 활동하고 있습니다.</p>
                 </div>
             </div>
+            <div class="about__between_space"></div>
             <div class="about__right">
-                <div class="about__descriptions">
-                    <h1>개요</h1>
+                <div class="about__title_container">
+                    <h2 class="about__right_title">개요</h2>
+                </div>
+                <div class="about__descrption">
                     <p>세월호 참사가 일어난지 7년. 이 짧지 않은 시간동안, 세월호는 사람들의 기억에서 점점 잊혀져 가고, 분노와 아픔, 그리고 진실에 대한 간절함도 많이 퇴색한 듯 합니다. 누군가는 외면하고, 누군가는 다 끝났으니 그만 잊으라고 합니다. 어느덧 7주기를 맞는 세월호 참사는 과연 우리에게 어떤 의미로 남았는지 자문해 봅니다. 또한, 사람들은 세월호 참사를 어떻게 기억하고 있을까요? 그동안 많은 일들이 일어났고, 우리 사회가 겪은 크고 작은 변화의 중심에 세월호가 있었습니다. 그리고, 분명 아직 해결하지 못한, 세월호가 남긴 과제와 질문들이 있습니다. ‘샌프란시스코 공감’은 세월호 참사 7주기를 맞이하여 희생자들을 추모하며, 세월호 참사를 기억하고, 미국인/재외국민의 시각에서 바라보는 세월호 참사와 그 의미(개인적 또는 사회적)에 대해 알아보는 기회로 삼고자 영상 공모전을 기획하였습니다.</p>
                 </div>
+            </div>
             </div>
         </div>
     </section>
     <!-- Judges -->
     <section class="section" id="judges">
         <div class="section__container">
-            <h1>Judfes</h1>
-        <div class="judges"></div>
+            <h1>심사위원</h1>
+        <div class="judges">
         <div class="judge">
-            <img src="imgs/judges/judge_img_holder.png" alt="people" class="judge__avatar">
+            <img src="imgs/judges/person1.jpeg" alt="people" class="judge__avatar">
             <div class="judge__info">
-                <br class="name">정상진</br>엣나인필름,아트나인 대표</p>
-                <p>Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                <br class="judge__name">정상진</br>엣나인필름,아트나인 대표</p>
+                <p class="judge__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat cum, quibusdam tempore rem commodi, atque ratione ullam corporis tenetur aliquam iure eaque itaque iusto, reiciendis et voluptatum vero! Unde!</p>
             </div>
         </div>
         <div class="judge">
-            <img src="imgs/judges/judge_img_holder.png" alt="people" class="judge__avatar">
+            <img src="imgs/judges/person2.png" alt="people" class="judge__avatar">
             <div class="judge__info">
-                <br class="name">김종기</br>운영위원장 4.16 세월호참사가족협의회</p>
-                <p>And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                <br class="judge__name">김종기</br>운영위원장 4.16 세월호참사가족협의회</p>
+                <p class="judge__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore autem harum tempora sapiente quos, atque voluptatum quas suscipit nemo voluptas aspernatur, magnam non quidem debitis eligendi eius ad corporis itaque?</p>
             </div>
         </div>
         <div class="judge">
-            <img src="imgs/judges/judge_img_holder.png" alt="people" class="judge__avatar">
+            <img src="imgs/judges/person3.jpeg" alt="people" class="judge__avatar">
             <div class="judge__info">
-                <br class="name">김순길</br>사무처장 4.16 세월호참사가족협의회</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis eligendi accusantium optio nesciunt dolore omnis voluptatem rem, error ipsam natus fuga assumenda temporibus ipsum. Doloribus harum odit soluta dolore.</p>
+                <br class="judge__name">김순길</br>사무처장 4.16 세월호참사가족협의회</p>
+                <p class="judge__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis eligendi accusantium optio nesciunt dolore omnis voluptatem rem, error ipsam natus fuga assumenda temporibus ipsum. Doloribus harum odit soluta dolore.</p>
             </div>
         </div>
         <div class="judge">
-            <img src="imgs/judges/judge_img_holder.png" alt="people" class="judge__avatar">
+            <img src="imgs/judges/person4.jpeg" alt="people" class="judge__avatar">
             <div class="judge__info">
-                <br class="name">윤경희</br>대외협력부서장 4.16 세월호참사가족협의회</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas minima ipsum architecto, accusantium earum fuga, vel, quia velit optio corporis nulla libero dicta? Praesentium culpa odit eveniet laborum fugiat.</p>
+                <br class="judge__name">윤경희</br>대외협력부서장 4.16 세월호참사가족협의회</p>
+                <p class="judge__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas minima ipsum architecto, accusantium earum fuga, vel, quia velit optio corporis nulla libero dicta? Praesentium culpa odit eveniet laborum fugiat.</p>
             </div>
         </div>
+        <div class="judge">
+            <img src="imgs/judges/person5.jpeg" alt="people" class="judge__avatar">
+            <div class="judge__info">
+                <br class="judge__name">한홍덕</br>반대표장 4.16 세월호참사가족협의회</p>
+                <p class="judge__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas minima ipsum architecto, accusantium earum fuga, vel, quia velit optio corporis nulla libero dicta? Praesentium culpa odit eveniet laborum fugiat.</p>
+            </div>
+        </div>
+    </div>
         
         </div>
     </section>
 
+    <!-- Memory -->
+    <section class="section" id="memory">
+        <div class="section__container">
+            <div class="memory__container">
+                <h1 class="memory__title">샌프란시스코 공감</br>One Heart for Justice</h1>
+                <h2 class="memory__subtitle">2017년 세월호 참사 3주기 SF 추모 행진</h2>
+                
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img class="slide__img" src="imgs/carousel_1.jpg" style="width:100%">
+                      <div class="text">세월호 참사 추모 행진1</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img class="slide__img" src="imgs/carousel_2.jpg" style="width:100%">
+                      <div class="text">세월호 참사 추모 행진2</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img class="slide__img" src="imgs/carousel_3.jpg" style="width:100%">
+                      <div class="text">세월호 참사 추모 벤치</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">Contact Us</h1>
+        <h1 class="contact__title">Let's Do It Together</h1>
         <a class="contact__email" href="mailto:oneheart4justice@gmail.com"><h2>oneheart4justice@gmail.com</h2></a>
         <div class="contact__links">
-            <a href="https://github.com/Yolongcat96/" title="_blank">
-                <i class="fab fa-github"></i>
+            <a href="https://www.facebook.com/1heart4justice" title="_blank">
+                <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="https://www.linkedin.com/in/sunmi-seol-a27385112/" translate="_blank">
-                <i class="fa fa-linkedin-square"></i>
+            <a href="https://twitter.com/1heart4justice" title="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.instagram.com/1heart4justice/" title="_blank">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCj3O9hAJgMut6-16i32qTYA" translate="_blank">
+                <i class="fab fa-youtube"></i>
             </a>
         </div>
         <p class="contact__rights">© Copyright 2021 One Heart For Justice</p>
