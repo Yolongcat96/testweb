@@ -134,6 +134,10 @@ p {
 }
 
 .navbar__logo {
+  color: var(--color-white);
+}
+
+.navbar__logo {
   width: 60px;
   height: 60px;
   font-size: var(--font-medium);
@@ -189,7 +193,7 @@ p {
 }
 
 .home__img {
-  width: 350px;
+  width: 400px;
   height: 300px;
   border-radius: 5%;
   border: 2px solid var(--color-light-white);
@@ -638,7 +642,7 @@ img {
 
   .home__img {
     width: 250px;
-    height: 200px;
+    height: 150px;
   }
 
   /* Submission */
